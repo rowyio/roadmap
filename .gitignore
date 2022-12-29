@@ -3,6 +3,7 @@
 .cache
 api
 public
+styles/
 /.env
 /build/
 /packages/*/dist/
