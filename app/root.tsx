@@ -9,7 +9,7 @@ import {
 } from "@remix-run/react";
 import { RootError } from "./components/errors";
 
-import styles from "./styles/app.css";
+import styles from "../styles/app.css";
 import { checkEnvironmentVariables } from "./util.server";
 
 export function links() {

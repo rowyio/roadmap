@@ -3,7 +3,7 @@
 .cache
 api
 public
-styles/
+styles/app.css
 /.env
 /build/
 /packages/*/dist/
