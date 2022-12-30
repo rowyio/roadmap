@@ -34,8 +34,9 @@ export default function App() {
       <head>
         <Meta />
         <Links />
+        <script src="https://unpkg.com/feedbackfin@^1" defer></script>
       </head>
-      <body className="w-full h-auto min-h-screen bg-base-200 overflow-y-auto">
+      <body className="w-full h-auto min-h-screen bg-base-200 overflow-y-auto relative">
         <div className="max-w-screen-md md:mx-auto md:pt-10">
           <Outlet />
           <ScrollRestoration />
