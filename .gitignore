@@ -2,7 +2,8 @@
 
 .cache
 api
-public
+/public/build
+/public/assets/
 styles/app.css
 /.env
 /build/
