@@ -32,7 +32,7 @@ export default function Roadmap() {
         ...(window as any).feedbackfin,
         config: {
           url: feedbackFinWebhookUrl,
-          user: {
+          user: currentUser && {
             name: currentUser.displayName,
             email: currentUser.email,
           },
