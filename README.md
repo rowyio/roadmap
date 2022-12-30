@@ -5,7 +5,10 @@
 </p>
 
 <h3 align="center"> Public roadmap app for your product </h3>
-
+<p align="center">
+Easily share your product roadmap with your users, gather feedback, and keep your community in the loop. 
+</p>
+<br/>
 <p align="center">
   Powered by <br/>
   <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap">
@@ -20,6 +23,7 @@
 ![image](https://user-images.githubusercontent.com/307298/210070378-4345e181-8b73-4ccc-ad17-234294f4d3c4.png)
 
 </div>
+
 <h2> Features </h2>
 ✅ Get feedback on your roadmap from public user groups or communities<br/>
 ✅ Upvote and downvote<br/>
