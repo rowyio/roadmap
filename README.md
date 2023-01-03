@@ -1,7 +1,8 @@
 <br/>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/307298/210067939-554e63ba-ea43-4ac5-9146-b0fb912ce435.png" alt="Rowy Roadmap App Logo" width="300">
+  <img src="https://user-images.githubusercontent.com/307298/210359227-67ce6157-3909-4ea3-a402-336c392a4c78.png" alt="Rowy Roadmap App Logo" width="300">
   <br/>
+
 </p>
 
 <h3 align="center"> Public roadmap app for your product </h3>
