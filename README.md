@@ -21,7 +21,9 @@ Easily share your product roadmap with your users, gather feedback, and keep you
 
 [![Discord](https://img.shields.io/discord/853498675484819476?color=%234200FF&label=Chat&logo=discord&logoColor=%23FFFFFF&style=for-the-badge)](https://discord.gg/fjBugmvzZP)
 
-![image](https://user-images.githubusercontent.com/307298/210070378-4345e181-8b73-4ccc-ad17-234294f4d3c4.png)
+<img width="800" src="https://user-images.githubusercontent.com/307298/211045738-d959b09a-9965-4c8c-8b2a-bd1679a91826.png" alt="Rowy Roadmap App">
+
+
 
 </div>
 
@@ -37,16 +39,22 @@ Easily share your product roadmap with your users, gather feedback, and keep you
 <h2> How to setup the app</h2>
 
 <h3>Step 1</h3>
-Setup an account on <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a> - which is a low-code platform with an Airtable-like UI for storing and managing your roadmap app's data.
-<h3>Step 2</h3>
-Once you setup your workspace and first free project (Firebase) on Rowy - you will be then able to create a table from the "Roadmap app" template. This comes with all the data columns you need for use in the roadmap app.<br/>
-<h3>Step 3</h3>
-Finally, deploy the roadmap app.
+Setup an account on <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a>. Rowy is a low-code platform for managing your database with a familiar spreadsheet-like UI like shown below. Rowy comes with a pre-built table template for this roadmap app to manage the items on your roadmap table.
+<img width="1538" alt="Screen Shot 2023-01-07 at 2 33 10 am" src="https://user-images.githubusercontent.com/307298/211044341-65cd67b2-417b-4467-a423-c1123223254c.png">
 
+<h3>Step 2</h3>
+After you finish setting up your Rowy account and the first workspace. Create a project and connect it to Firebase. Don't worry if you have not used Firebase before, Rowy guides you through the whole process - this should only take a few minutes. <br/><br/>
+<i>Note: Your data will be stored on Firebase's Firestore. This gives a secure way to store your data on your own cloud project on GCP i.e. you have full control and ownership of your data.</i><br/>
+<h3>Step 3</h3>
+Inside your project, create a new table from the "Roadmap app" template. This comes with all the data columns you need for use in the roadmap app.
+
+<h3>Step 4</h3>
+Finally, deploy the roadmap app on Vercel using one the options below and connect to your backend by providing the relevant keys as env variables.
 <h4>Option A - Recommended</h4>
 You can deploy this roadmap app repo to your Vercel account directly using the following one click deploy button<br/><br/>
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frowyio%2Froadmap&env=CLIENT_FIREBASE_CONFIG,SERVER_FIREBASE_SERVICE_ACCOUNT,SESSION_SECRET,COLLECTION,TABLE_ID&project-name=rowy-roadmap&repository-name=rowy-roadmap)
+
 
 <h4>Option B - Manual</h4>
 Alternatively, if you want to manually deploy, then ensure you add the following `environment` variables.
