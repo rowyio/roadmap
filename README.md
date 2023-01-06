@@ -41,15 +41,14 @@ LIVE DEMO: <a href="https://roadmap.rowy.io/">roadmap.rowy.io</a> </h4>
 
 <h3>Step 1</h3>
 Setup an account on <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a>. Rowy is a low-code platform for managing your database with a familiar spreadsheet-like UI like shown below. Rowy comes with a pre-built table template for this roadmap app to manage the items on your roadmap table.
+<br/><br/>
+👉 Explore a <a href="https://demo.rowy.io/table/roadmap" target="_blank">demo playground instance of Rowy here </a>
 <img width="1538" alt="Screen Shot 2023-01-07 at 2 33 10 am" src="https://user-images.githubusercontent.com/307298/211044341-65cd67b2-417b-4467-a423-c1123223254c.png">
 
 <h3>Step 2</h3>
-After you finish setting up your Rowy account and the first workspace. Create a project and connect it to Firebase. Don't worry if you have not used Firebase before, Rowy guides you through the whole process - this should only take a few minutes. <br/><br/>
+After you finish setting up your Rowy account and the first workspace. Create a project and connect it to Firebase. Don't worry if you have not used Firebase before, Rowy guides you through the whole process - this should only take a few minutes. Inside your project, create a new table from the "Roadmap app" template. This comes with all the data columns you need for use in the roadmap app. <br/><br/>
 <i>Note: Your data will be stored on Firebase's Firestore. This gives a secure way to store your data on your own cloud project on GCP i.e. you have full control and ownership of your data.</i><br/>
 <h3>Step 3</h3>
-Inside your project, create a new table from the "Roadmap app" template. This comes with all the data columns you need for use in the roadmap app.
-
-<h3>Step 4</h3>
 Finally, deploy the roadmap app on Vercel using one the options below and connect to your backend by providing the relevant keys as env variables.
 <h4>Option A - Recommended</h4>
 You can deploy this roadmap app repo to your Vercel account directly using the following one click deploy button<br/><br/>
