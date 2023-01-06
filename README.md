@@ -9,14 +9,15 @@
 <p align="center">
 Easily share your product roadmap with your users, gather feedback, and keep your community in the loop. 
 </p>
-<br/>
+
 <p align="center">
   Powered by <br/>
   <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap">
     <img src="https://user-images.githubusercontent.com/307298/210066491-0d9cae79-bd88-4664-88d2-48e3bbe723ea.png" alt="Rowy Logo" width="80" >
   </a>
 </p>
-
+<h4 align="center">
+LIVE DEMO: <a href="https://roadmap.rowy.io/">roadmap.rowy.io</a> </h4>
 <div align="center">
 
 [![Discord](https://img.shields.io/discord/853498675484819476?color=%234200FF&label=Chat&logo=discord&logoColor=%23FFFFFF&style=for-the-badge)](https://discord.gg/fjBugmvzZP)
@@ -34,7 +35,7 @@ Easily share your product roadmap with your users, gather feedback, and keep you
 ✅ Customizable categories: In progress, Next, Needs feedback, Release .. <br/>
 ✅ Open-source, flexible and fully free<br/>
 ✅ Optionally, comes with an in-app feedback widget for open ended feeature requests or feeback<br/>
-✅ Add any automation or workflows with Rowy<br/>
+✅ CMS UI with ability to add any automation or workflows with Rowy<br/>
 
 <h2> How to setup the app</h2>
 
