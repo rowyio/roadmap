@@ -16,15 +16,23 @@ Easily share your product roadmap with your users, gather feedback, and keep you
     <img src="https://user-images.githubusercontent.com/307298/210066491-0d9cae79-bd88-4664-88d2-48e3bbe723ea.png" alt="Rowy Logo" width="80" >
   </a>
 </p>
+<div align="center">
+<h3>One click deploy to Vercel 👇</h3>
+</div>
+<div align="center">
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frowyio%2Froadmap&env=CLIENT_FIREBASE_CONFIG,SERVER_FIREBASE_SERVICE_ACCOUNT,SESSION_SECRET,COLLECTION,TABLE_ID&project-name=rowy-roadmap&repository-name=rowy-roadmap)
+
+</div>
+
 <h4 align="center">
+
+<img width="800" src="https://user-images.githubusercontent.com/307298/211045738-d959b09a-9965-4c8c-8b2a-bd1679a91826.png" alt="Rowy Roadmap App">
+
 LIVE DEMO: <a href="https://roadmap.rowy.io/">roadmap.rowy.io</a> </h4>
 <div align="center">
 
 [![Discord](https://img.shields.io/discord/853498675484819476?color=%234200FF&label=Chat&logo=discord&logoColor=%23FFFFFF&style=for-the-badge)](https://discord.gg/fjBugmvzZP)
-
-<img width="800" src="https://user-images.githubusercontent.com/307298/211045738-d959b09a-9965-4c8c-8b2a-bd1679a91826.png" alt="Rowy Roadmap App">
-
-
 
 </div>
 
