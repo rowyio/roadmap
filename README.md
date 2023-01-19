@@ -81,9 +81,9 @@ FEEDBACK_FIN_WEBHOOK_URL=
 ```
 
 <h5>CLIENT_FIREBASE_CONFIG</h5>
-Your Firebase project config. Follow this link, by replacing the {your-projectId} with the Firebase project id: https://console.firebase.google.com/u/0/project/{your-projectId}/settings/general<br/>
-<h5>SERVER_FIREBASE_SERVICE_ACCOUNT</h5>
-Generate an Firebase admin sdk service account and add that to your config. Follow this link, by replacing the {your-projectId} with the Firebase project id: https://console.firebase.google.com/u/0/project/{your-projectId}/settings/serviceaccounts/adminsdk<br/>
+Your Firebase project config. Follow this link, to go to your project on Firebase: https://console.firebase.google.com/u/0/project/_/settings/general<br/>
+<h5>SERVER_FIREBASE_SERVICE_ACCOUNT</h5>:
+Generate an Firebase admin sdk service account and add that to your config. Follow this link, to go to your project on Firebase: https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk<br/>
 <h5>COLLECTION</h5>
 Your Firestore collection that stores the roadmap data<br/>
 <h5>TABLE_ID</h5>
