@@ -48,7 +48,7 @@ LIVE DEMO: <a href="https://roadmap.rowy.io/">roadmap.rowy.io</a> </h4>
 <h2> How to setup the app</h2>
 
 <h3>Step 1</h3>
-Setup an account on <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a>. Rowy is a low-code platform for managing your database with a familiar spreadsheet-like UI like shown below. Rowy comes with a pre-built table template for this roadmap app to manage the items on your roadmap table.
+Setup an account on <a href="https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a>. Rowy is a low-code platform for managing your database with a familiar spreadsheet-like UI like shown below. Rowy comes with a pre-built table template for this roadmap app to manage the items on your roadmap table.
 <br/><br/>
 👉 Explore a <a href="https://demo.rowy.io/table/roadmap" target="_blank">demo playground instance of Rowy here </a>
 <img width="1538" alt="Screen Shot 2023-01-07 at 2 33 10 am" src="https://user-images.githubusercontent.com/307298/211044341-65cd67b2-417b-4467-a423-c1123223254c.png">
