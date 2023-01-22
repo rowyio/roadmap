@@ -12,7 +12,7 @@ Easily share your product roadmap with your users, gather feedback, and keep you
 
 <p align="center">
   Powered by <br/>
-  <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap">
+  <a href="https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap">
     <img src="https://user-images.githubusercontent.com/307298/210066491-0d9cae79-bd88-4664-88d2-48e3bbe723ea.png" alt="Rowy Logo" width="80" >
   </a>
 </p>
@@ -56,7 +56,7 @@ Don't worry if you have not family with Firebase, Rowy will guide you through th
 <br/>
 <br/>
 
-1. Create an account on <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a> and create a workspace for the Roadmap app
+1. Create an account on <a href="https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a> and create a workspace for the Roadmap app
 2. Create a new project by connecting it to Firebase - step by step video
 3. Create a new table from "Roadmap app" template
 4. Add the initial set of data to be displayed on the roadmap app on table
