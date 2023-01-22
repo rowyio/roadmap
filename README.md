@@ -45,27 +45,29 @@ LIVE DEMO: <a href="https://roadmap.rowy.io/">roadmap.rowy.io</a> </h4>
 ✅ Optionally, comes with an in-app feedback widget for open ended feeature requests or feeback<br/>
 ✅ CMS UI with ability to add any automation or workflows with Rowy<br/>
 
-<h2> How to setup the app</h2>
+<h2> Setup Guide</h2>
 
-<h3>Step 1</h3>
-Setup an account on <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a>. Rowy is a low-code platform for managing your database with a familiar spreadsheet-like UI like shown below. Rowy comes with a pre-built table template for this roadmap app to manage the items on your roadmap table.
+Complete setup guide video
+
+<h3>Step 1: Setup backend template</h3>
+The backend template for the roadmap app is available on Rowy - a lowcode platform for Firebase. This template will get you setup with a database on Firestore and cloud functions on Firebase. <i>
+Don't worry if you have not family with Firebase, Rowy will guide you through the entire process. 
+</i> 
+<br/>
+<br/>
+
+1. Create an account on <a href="https://www.rowyio?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a> and create a workspace for the Roadmap app
+2. Create a new project by connecting it to Firebase - step by step video
+3. Create a new table from "Roadmap app" template
+4. Add the initial set of data to be displayed on the roadmap app on table
+
+<h3>Step 2: Setup frontend template </h3>
+You can deploy the roadmap app frontend, built with Remix, to Vercel using the one click deploy button below. 
 <br/><br/>
-👉 Explore a <a href="https://demo.rowy.io/table/roadmap" target="_blank">demo playground instance of Rowy here </a>
-<img width="1538" alt="Screen Shot 2023-01-07 at 2 33 10 am" src="https://user-images.githubusercontent.com/307298/211044341-65cd67b2-417b-4467-a423-c1123223254c.png">
-
-<h3>Step 2</h3>
-After you finish setting up your Rowy account and the first workspace. Create a project and connect it to Firebase. Don't worry if you have not used Firebase before, Rowy guides you through the whole process - this should only take a few minutes. Inside your project, create a new table from the "Roadmap app" template. This comes with all the data columns you need for use in the roadmap app. <br/><br/>
-<i>Note: Your data will be stored on Firebase's Firestore. This gives a secure way to store your data on your own cloud project on GCP i.e. you have full control and ownership of your data.</i><br/>
-<h3>Step 3</h3>
-Finally, deploy the roadmap app on Vercel using one the options below and connect to your backend by providing the relevant keys as env variables.
-<h4>Option A - Recommended</h4>
-You can deploy this roadmap app repo to your Vercel account directly using the following one click deploy button<br/><br/>
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frowyio%2Froadmap&env=CLIENT_FIREBASE_CONFIG,SERVER_FIREBASE_SERVICE_ACCOUNT,SESSION_SECRET,COLLECTION,TABLE_ID&project-name=rowy-roadmap&repository-name=rowy-roadmap)
 
-
-<h4>Option B - Manual</h4>
-Alternatively, if you want to manually deploy, then ensure you add the following `environment` variables.
+Add the following environment variables by following the instructions below.
 
 ```
 CLIENT_FIREBASE_CONFIG=
@@ -76,18 +78,18 @@ TABLE_ID=roadmap
 // OPTIONAL: Use a secret to secure auth session
 SESSION_SECRET=<s3cr3t>
 
-// OPTIONAL: Open ended feedback widget using [FeedbackFin](https://github.com/rowyio/feedbackfin) - add submission webhook url
+// OPTIONAL: To add a feedback widget 
 FEEDBACK_FIN_WEBHOOK_URL=
 ```
 
-<h5>CLIENT_FIREBASE_CONFIG</h5>
-Your Firebase project config. Follow this link, to go to your project on Firebase: https://console.firebase.google.com/u/0/project/_/settings/general<br/>
-<h5>SERVER_FIREBASE_SERVICE_ACCOUNT</h5>:
-Generate an Firebase admin sdk service account and add that to your config. Follow this link, to go to your project on Firebase: https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk<br/>
-<h5>COLLECTION</h5>
-Your Firestore collection that stores the roadmap data<br/>
-<h5>TABLE_ID</h5>
-Rowy Table ID<br/>
+| `env` variable | Description |
+| --- | --- |
+| CLIENT_FIREBASE_CONFIG | Your Firebase project config. Follow this link, to go to your project on Firebase: https://console.firebase.google.com/u/0/project/_/settings/general |
+| SERVER_FIREBASE_SERVICE_ACCOUNT | Generate an Firebase admin sdk service account and add that to your config. Follow this link, to go to your project on Firebase: https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk |
+| COLLECTION | Your Firestore collection that stores the roadmap data. Default to `roadmap` |
+| TABLE_ID | Rowy Table ID. Default to `roadmap` |
+| SESSION_SECRET | `Optional` setup a session secret |
+| FEEDBACK_FIN_WEBHOOK_URL | `Optional` If you want to add a feedback widget to your roadmap app, add the webhook URL setup using [FeedbackFin](https://github.com/rowyio/feedbackfin) |
 
 <h2> Contribution and development guide </h2>
 If you would like to contribute to this project, then follow this development setup guide.
