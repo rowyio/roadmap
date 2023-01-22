@@ -51,7 +51,7 @@ Complete setup guide video
 
 <h3>Step 1: Setup backend template</h3>
 The backend template for the roadmap app is available on Rowy - a lowcode platform for Firebase. This template will get you setup with a database on Firestore and cloud functions on Firebase. <i>
-Don't worry if you have not family with Firebase, Rowy will guide you through the entire process. 
+Don't worry if you have not familiar with Firebase, Rowy will guide you through the entire process. 
 </i> 
 <br/>
 <br/>
