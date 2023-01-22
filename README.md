@@ -84,8 +84,8 @@ FEEDBACK_FIN_WEBHOOK_URL=
 
 | `env` variable | Description |
 | --- | --- |
-| CLIENT_FIREBASE_CONFIG | Your Firebase project config. Follow this link, to go to your project on Firebase: https://console.firebase.google.com/u/0/project/_/settings/general |
-| SERVER_FIREBASE_SERVICE_ACCOUNT | Generate an Firebase admin sdk service account and add that to your config. Follow this link, to go to your project on Firebase: https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk |
+| CLIENT_FIREBASE_CONFIG | Add your Firebase project config json - you can get it from your Firebase project [here](https://console.firebase.google.com/u/0/project/_/settings/general) |
+| SERVER_FIREBASE_SERVICE_ACCOUNT | Generate an Firebase admin sdk service account and add that to your config by following this [link](https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk) to your Firebase project |
 | COLLECTION | Your Firestore collection that stores the roadmap data. Default to `roadmap` |
 | TABLE_ID | Rowy Table ID. Default to `roadmap` |
 | SESSION_SECRET | `Optional` setup a session secret |
