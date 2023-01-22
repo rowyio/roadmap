@@ -59,7 +59,7 @@ Don't worry if you have not familiar with Firebase, Rowy will guide you through 
 1. Create an account on <a href="https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a> and create a workspace for the Roadmap app
 2. Create a new project by connecting it to Firebase - step by step video
 3. Create a new table from "Roadmap app" template
-4. Add the initial set of data to be displayed on the roadmap app on table
+4. Now you can manage your app’s data on Rowy’s CMS for Firestore. Add the initial set of data to be displayed on the roadmap app i.e. your product’s features list, their description, target release date, category etc.
 
 <h3>Step 2: Setup frontend template </h3>
 You can deploy the roadmap app frontend, built with Remix, to Vercel using the one click deploy button below. 
