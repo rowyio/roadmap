@@ -37,7 +37,7 @@ Explore a [live demo](https://roadmap.rowy.io/) of the roadmap app
 - [x] CMS UI with ability to add any automation or workflows with Rowy
 
 ## Setup Guide
-Full instructions video: 
+Full setup instructions video available [here](https://roadmap.vote/setupvideo)
 
 ### Step 1: Setup backend template
 The backend for the roadmap app is setup on Firebase and managed via Rowy which is a lowcode platform for Firebase. Rowy gives you a Table UI to manage your the data for your roadmap app along with getting all the backend cloud functions for managing the roadmap app setup in one click.   
