@@ -21,7 +21,7 @@ Get users' feedback and votes for your product roadmap
 <br/>
 
 ## Overview
-Open-source product roadmap app that can be shared publicly with your users to collect valuable feedback. Users can upvote/downvote on features, add comments, request for new features. Keep your users in the loop with workflows notifying them when a feature is ready. The app’s frontend is built with Remix and the backend is built with Rowy (a lowcode platform for Firebase).
+Open-source product roadmap app that can be shared publicly with your users to collect valuable feedback. Users can upvote/downvote on features, add comments, request for new features. Keep your users in the loop with workflows notifying them when a feature is ready. The app’s frontend is built with Remix and the backend is built with [Rowy](https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap) (a lowcode platform for Firebase).
 
 ## Demo
 
@@ -44,7 +44,7 @@ The backend for the roadmap app is setup on Firebase and managed via Rowy which 
 
 _Don't worry if you are not familiar with Firebase, Rowy will guide you through the entire process._  
 
-1. Create an account on <a href="https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a> and create a workspace for the Roadmap app
+1. Create an account on [Rowy](https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap) and create a workspace for the Roadmap app
 2. Create a new project by connecting it to Firebase - step by step video
 3. Create a new table from "Roadmap app" template
 4. Now you can manage your app’s data on Rowy’s CMS for Firestore. Add the initial set of data to be displayed on the roadmap app i.e. your product’s features list, their description, target release date, category etc.
