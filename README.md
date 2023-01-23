@@ -58,10 +58,10 @@ Deploy the roadmap app’s frontend to Vercel using the deploy button. Add the f
 
 #### Add the following environment variables to your app on Vercel
 
-- `CLIENT_FIREBASE_WEB_API_KEY` – Add your Firebase project config json - you can get it from your Firebase project [here](https://console.firebase.google.com/u/0/project/_/settings/general)
-- `SERVER_FIREBASE_SERVICE_ACCOUNT` – Generate an Firebase admin sdk service account and add that to your config by following this [link](https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk) to your Firebase project
-- `COLLECTION` – Your Firestore collection that stores the roadmap data. Default to `roadmap`
-- `TABLE_ID` – Rowy Table ID. Default to `roadmap`
+- `CLIENT_FIREBASE_WEB_API_KEY` – Add your Firebase project's web API key. Get it from your Firebase project [here](https://console.firebase.google.com/u/0/project/_/settings/general)
+- `SERVER_FIREBASE_SERVICE_ACCOUNT` – Generate a Firebase admin sdk service account JSON and add that to your config by following this [link](https://console.firebase.google.com/u/0/project/_/settings/serviceaccounts/adminsdk) to your Firebase project
+- `COLLECTION` – Name of the Firestore collection that stores the roadmap data. Default to `roadmap`
+- `TABLE_ID` – Name of the Rowy Table ID. Default to `roadmap`
 - `SESSION_SECRET` – `Optional` setup a session secret
 - `FEEDBACK_FIN_WEBHOOK_URL` – `Optional` If you want to add a feedback widget to your roadmap app, add the webhook URL setup using [FeedbackFin](https://github.com/rowyio/feedbackfin)
 
