@@ -7,12 +7,17 @@ const firebaseServiceAccount: { [key: string]: string } | null = process.env
   ? JSON.parse(process.env.SERVER_FIREBASE_SERVICE_ACCOUNT)
   : null;
 
-export const firebaseClientConfig: { [key: string]: string } | null = process
-  .env.CLIENT_FIREBASE_CONFIG
-  ? JSON.parse(process.env.CLIENT_FIREBASE_CONFIG)
-  : null;
+export const firebaseClientConfig = {
+  apiKey: process.env.CLIENT_FIREBASE_WEB_API_KEY,
+  projectId: firebaseServiceAccount?.project_id,
+  authDomain: `${firebaseServiceAccount?.project_id}.firebaseapp.com`,
+  storageBucket: `${firebaseServiceAccount?.project_id}.appspot.com`,
+};
+
+console.log(firebaseClientConfig);
 
 let adminApp;
+
 if (firebaseServiceAccount) {
   adminApp =
     getApps().length === 0
