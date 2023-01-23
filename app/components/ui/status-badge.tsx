@@ -7,7 +7,7 @@ const statusColors: { [key: string]: string } = {
 
 const StatusBadge = ({ status }: any) => (
   <div
-    className={`select-none px-2 py-1 mr-1 rounded-lg text-white text-sm flex items-center ${
+    className={`select-none px-2 py-1 mr-2 rounded-lg text-white text-sm flex items-center ${
       statusColors[status] ?? "bg-primary"
     }`}
   >
