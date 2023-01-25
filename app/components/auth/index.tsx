@@ -4,11 +4,14 @@ import type { UserCredential } from "firebase/auth";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { useState } from "react";
 import IconGoogle from "../svg/icon-google";
+import UnauthorizedDomain from "../error/UnauthorizedDomain";
 
 export const LoginButton = ({ firebaseConfig }: any) => {
   const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
   // TODO error handling / web-api-key missing
   const auth = getAuth(app);
+
+  const [error, setError] = useState<any>(null);
 
   const submit = useSubmit();
 
@@ -21,21 +24,26 @@ export const LoginButton = ({ firebaseConfig }: any) => {
         });
       },
       (error: any) => {
-        // TODO error handling / auth domain missing
-        throw new Error(error);
+        console.error(error);
+        setError(error);
       }
     );
   };
 
   return (
-    <button className="btn btn-ghost" onClick={handleLogin}>
-      <span className="flex items-center gap-1">
-        <IconGoogle />
-        <span className="w-20 sm:w-full overflow-hidden text-ellipsis whitespace-nowrap">
-          Sign in with Google
+    <>
+      {error && error.code === "auth/unauthorized-domain" && (
+        <UnauthorizedDomain projectId={firebaseConfig?.projectId} />
+      )}
+      <button className="btn btn-ghost" onClick={handleLogin}>
+        <span className="flex items-center gap-1">
+          <IconGoogle />
+          <span className="w-20 sm:w-full overflow-hidden text-ellipsis whitespace-nowrap">
+            Sign in with Google
+          </span>
         </span>
-      </span>
-    </button>
+      </button>
+    </>
   );
 };
 

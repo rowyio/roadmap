@@ -90,7 +90,6 @@ export default function Items() {
         <RoadmapItems items={sortedItems} userVotes={userVotes} />
       )}
       {errors.map((error: any) => {
-        console.log(error);
         if (error.code === 9) {
           return <MissingFirestoreIndex error={error} />;
         }
