@@ -1,5 +1,10 @@
 import type { LoaderFunction } from "@remix-run/node";
-import { Outlet, useLoaderData, useTransition } from "@remix-run/react";
+import {
+  Outlet,
+  useLoaderData,
+  useOutletContext,
+  useTransition,
+} from "@remix-run/react";
 import RoadmapItems from "../../components/roadmap/items";
 import { getStatusOptions, getAll } from "~/api.server";
 import Spinner from "~/components/ui/spinner";
@@ -9,6 +14,8 @@ import { useState } from "react";
 import { RoadmapItem } from "~/models/RoadmapItem";
 import { Vote } from "~/models/Vote";
 import { UserVote } from "~/models/UserVote";
+import { User } from "~/models/User";
+import MissingFirestoreIndex from "~/components/error/MissingFirestoreIndex";
 
 export const loader: LoaderFunction = async ({
   request,
@@ -17,7 +24,7 @@ export const loader: LoaderFunction = async ({
 }) => {
   const url = new URL(request.url);
   const status = url.searchParams.get("status");
-  const [[items, userVotes], statusOptions] = await Promise.all([
+  const [[items, userVotes, errors], statusOptions] = await Promise.all([
     getAll(request, { status }),
     getStatusOptions(),
   ]);
@@ -28,13 +35,14 @@ export const loader: LoaderFunction = async ({
     userVotes: userVotes?.map((userVote) =>
       UserVote.toClient(userVote as UserVote)
     ),
+    errors,
     status,
     statusOptions,
   };
 };
 
 export default function Items() {
-  const { items, userVotes, status, statusOptions } = useLoaderData();
+  const { items, userVotes, errors, status, statusOptions } = useLoaderData();
   const transition = useTransition();
   const isLoading = transition.state == "loading";
   const [sortBy, setSortBy] = useState<"Most Voted" | "Most Recent">(
@@ -81,6 +89,12 @@ export default function Items() {
       ) : (
         <RoadmapItems items={sortedItems} userVotes={userVotes} />
       )}
+      {errors.map((error: any) => {
+        console.log(error);
+        if (error.code === 9) {
+          return <MissingFirestoreIndex error={error} />;
+        }
+      })}
       <Outlet />
     </Container>
   );

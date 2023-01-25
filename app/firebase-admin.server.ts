@@ -14,8 +14,6 @@ export const firebaseClientConfig = {
   storageBucket: `${firebaseServiceAccount?.project_id}.appspot.com`,
 };
 
-console.log(firebaseClientConfig);
-
 let adminApp;
 
 if (firebaseServiceAccount) {

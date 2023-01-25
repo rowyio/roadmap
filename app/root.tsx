@@ -8,7 +8,7 @@ import {
   ScrollRestoration,
   useLoaderData,
 } from "@remix-run/react";
-import { RootError } from "./components/errors";
+import { RootError } from "./components/error";
 
 import styles from "../styles/app.css";
 import { checkEnvironmentVariables } from "./util.server";

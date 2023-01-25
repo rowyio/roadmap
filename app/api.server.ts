@@ -38,14 +38,16 @@ export async function getAll(
   const userVotesRef =
     currentUser &&
     db.collectionGroup("votes").where("_createdBy.uid", "==", currentUser.uid);
-
-  const [itemsSnaphot, userVotesSnaphot] = await Promise.all([
-    itemsRef.get(),
-    userVotesRef?.get(),
-  ]);
+  const errors: any[] = [];
+  const itemsSnapshot = await itemsRef.get();
+  const userVotesSnaphot = await userVotesRef?.get().catch((error) => {
+    // Missing index
+    errors.push(error);
+  });
   return [
-    itemsSnaphot.docs.map(RoadmapItem.fromFirestore),
+    itemsSnapshot.docs.map(RoadmapItem.fromFirestore),
     userVotesSnaphot?.docs.map(UserVote.fromFirestore),
+    errors,
   ];
 }
 

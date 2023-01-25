@@ -1,4 +1,4 @@
-const RootError = ({ error }: { error: Error }) => {
+const RootError = ({ error }: any) => {
   const instructions = () => {
     switch (error.message) {
       case "CLIENT_FIREBASE_PROJECT_ID":
@@ -316,7 +316,7 @@ const RootError = ({ error }: { error: Error }) => {
         );
       default:
         // TODO: add support links to Rowy community channels
-        return null;
+        return error.message;
     }
   };
 

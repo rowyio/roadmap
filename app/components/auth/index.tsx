@@ -11,10 +11,8 @@ export const LoginButton = ({ firebaseConfig }: any) => {
   const auth = getAuth(app);
 
   const submit = useSubmit();
-  const [loading, setLoading] = useState(false);
 
   const handleLogin = async () => {
-    setLoading(true);
     await signInWithPopup(auth, new GoogleAuthProvider()).then(
       (result: UserCredential) => {
         const user = result.user;
@@ -30,7 +28,7 @@ export const LoginButton = ({ firebaseConfig }: any) => {
   };
 
   return (
-    <button className="btn btn-ghost" onClick={handleLogin} disabled={loading}>
+    <button className="btn btn-ghost" onClick={handleLogin}>
       <span className="flex items-center gap-1">
         <IconGoogle />
         <span className="w-20 sm:w-full overflow-hidden text-ellipsis whitespace-nowrap">
