@@ -21,7 +21,7 @@ Get users' feedback and votes for your product roadmap
 <br/>
 
 ## Overview
-Open-source product roadmap app that can be shared publicly with your users to collect valuable feedback. Users can upvote/downvote on features, add comments, request for new features. Keep your users in the loop with workflows notifying them when a feature is ready. The app’s frontend is built with Remix and the backend is built with Rowy (a lowcode platform for Firebase).
+Open-source product roadmap app that can be shared publicly with your users to collect valuable feedback. Users can upvote/downvote on features, add comments, request for new features. Keep your users in the loop with workflows notifying them when a feature is ready. The app’s frontend is built with Remix and the backend is built with [Rowy](https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap) (a lowcode platform for Firebase).
 
 ## Demo
 
@@ -44,7 +44,7 @@ The backend for the roadmap app is setup on Firebase and managed via Rowy which 
 
 _Don't worry if you are not familiar with Firebase, Rowy will guide you through the entire process._  
 
-1. Create an account on <a href="https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap" target="_blank">Rowy</a> and create a workspace for the Roadmap app
+1. Create an account on [Rowy](https://www.rowy.io?utm_source=github&utm_campaign=readme&utm_medium=roadmap) and create a workspace for the Roadmap app
 2. Create a new project by connecting it to Firebase - step by step video
 3. Create a new table from "Roadmap app" template
 4. Now you can manage your app’s data on Rowy’s CMS for Firestore. Add the initial set of data to be displayed on the roadmap app i.e. your product’s features list, their description, target release date, category etc.
@@ -67,7 +67,7 @@ Deploy the roadmap app’s frontend to Vercel using the deploy button. Add the f
 
 ###  Step 3: That's it 🎉
 
-Use the app’s Vercel hosted domain or [create customized URL](https://vercel.com/docs/concepts/projects/domains/add-a-domain), to share with your users and gather votes/feedback from them.
+Vercel gives you a hosted app domain or [create customized URL](https://vercel.com/docs/concepts/projects/domains/add-a-domain). Make sure to add this domain URL to list of [authorized domains](https://console.firebase.google.com/u/0/project/_/authentication/settings) in your Firebase project. Now you are all set to share this URL with your users and start gathering votes/feedback on your product roadmap.
 
 ![Rowy Roadmap App](https://user-images.githubusercontent.com/307298/211045738-d959b09a-9965-4c8c-8b2a-bd1679a91826.png)
 
