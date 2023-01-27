@@ -28,7 +28,7 @@ const VoteButtons = ({
   };
 
   return (
-    <ul className="menu menu-compact bg-inherit rounded-box gap-1 items-center p-0 flex-row md:flex-col justify-between md:justify-start relative">
+    <ul className="menu menu-compact bg-inherit rounded-box gap-1 items-center p-0 flex-col justify-start relative">
       {busy && (
         <div className="absolute inset-0 bg-base-300/30 z-50 rounded-lg">
           <Spinner />
@@ -82,9 +82,8 @@ const VoteButton = ({
     data-tip={isVoted ? "Unvote" : voteType}
   >
     <li
-      className={`rounded-lg ${busy ? "disabled" : ""} ${
-        isVoted ? "bg-primary hover:bg-primary-focus text-primary-content" : ""
-      }`}
+      className={`rounded-lg ${busy ? "disabled" : ""} ${isVoted ? "bg-primary hover:bg-primary-focus text-primary-content" : ""
+        }`}
     >
       {isVoted ? (
         <button disabled={busy} onClick={handleClick}>
@@ -120,7 +119,7 @@ const VoteModalButton = ({
     <>
       <label
         htmlFor={`vote-form-${item.id}-${voteType}`}
-        className="modal-button"
+        className="modal-button px-1 md:px-4"
       >
         {icon}
       </label>
@@ -164,9 +163,8 @@ const VoteModalButton = ({
               <div className="modal-action">
                 <label
                   htmlFor={`vote-form-${item.id}-${voteType}`}
-                  className={`btn ${
-                    voteType === "Meh" ? "btn-error" : "btn-primary"
-                  }`}
+                  className={`btn ${voteType === "Meh" ? "btn-error" : "btn-primary"
+                    }`}
                   onClick={() => handleClick(commentInput)}
                 >
                   <span className="mr-1">Vote</span>
