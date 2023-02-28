@@ -3,8 +3,8 @@ import type { DecodedIdToken } from "firebase-admin/auth";
 
 export class ClientUser {
   constructor(
-    readonly displayName: string,
     readonly photoURL: string,
+    readonly displayName?: string,
     readonly date?: Date
   ) {}
 }
