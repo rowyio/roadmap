@@ -69,7 +69,7 @@ export default function Items() {
           calculateScore(item1) > calculateScore(item2) ? -1 : 1
         )
       : items.sort((item1: RoadmapItem, item2: RoadmapItem) =>
-          item1.createdBy.date! > item2.createdBy.date! ? -1 : 1
+          item1.createdBy?.date! > item2.createdBy?.date! ? -1 : 1
         );
 
   return (
