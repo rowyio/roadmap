@@ -11,7 +11,7 @@ const MissingFirestoreIndex = ({ error }: any) => {
   const link =
     error.details.match(
       /(http|https):\/\/([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:\/~+#-]*[\w@?^=%&\/~+#-])/
-    )[0] || "";
+    )?.[0] ?? "";
 
   return (
     <div className="fixed top-0 w-full max-w-screen-md md:mx-auto alert alert-error shadow-lg px-2 py-1 mt-1">
